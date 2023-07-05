@@ -6,7 +6,7 @@ const ProductDetail = () => {
   const [product, setProduct] = useState(null);
 
   const getProductDetail = async () => {
-    let url = `https://my-json-server.typicode.com/<YENAZIGMINA>/<hnm>/products/${id}`;
+    let url = `https://my-json-server.typicode.com/YENAZIGMINA/hnm/products/${id}`;
     let respons = await fetch(url); //await는 비동기화, async랑 짝지로 써야함
     let data = await respons.json();
     console.groupCollapsed(data);

@@ -9,7 +9,7 @@ function ProductAll() {
   // 비동기(async와 await는 짝지로 사용!)
   const getProducts=async()=>{
     const searchQuery=query.get('q')||"";
-    const url=`https://my-json-server.typicode.com/<YENAZIGMINA>/<hnm>/products?q=${searchQuery}`; //my-json-serve 사이트에서 HOW TO USE 복붙
+    const url=`https://my-json-server.typicode.com/YENAZIGMINA/hnm/products?q=${searchQuery}`; //my-json-serve 사이트에서 HOW TO USE 복붙
     let reponsive=await fetch(url); //객체로 받음
     let data=await reponsive.json(); //json형식으로 받음 (배열)
     console.log(reponsive, data)
